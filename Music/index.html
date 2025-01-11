@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luan Moraes Music</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Sidebar -->
+        <nav class="col-auto sidebar">
+          <div class="logo animate__animated animate__fadeIn">
+            <div class="logo-brand">
+              <div class="logo-lm" role="img" aria-label="Logo LM">LM</div>
+              <div class="logo-info">
+                <h2 class="fw-bold">Luan Moraes</h2>
+                <p>Music</p>
+              </div>
+            </div>
+          </div>
+          <ul class="nav-links list-unstyled">
+            <li
+              class="animate__animated animate__fadeInLeft"
+              tabindex="0"
+              data-tooltip="Ir para início"
+            >
+              <i class="fas fa-home" aria-hidden="true"></i> Início
+            </li>
+            <li class="animate__animated animate__fadeInLeft">
+              <i class="fas fa-search"></i> Buscar
+            </li>
+            <li class="animate__animated animate__fadeInLeft">
+              <i class="fas fa-book"></i> Biblioteca
+            </li>
+            <li class="animate__animated animate__fadeInLeft">
+              <i class="fas fa-plus-square"></i> Criar Playlist
+            </li>
+          </ul>
+          <div class="playlists">
+            <h3 class="fs-5 mb-3">Playlists</h3>
+            <ul class="list-unstyled">
+              <li class="animate__animated animate__fadeInLeft">
+                Meus Favoritos
+              </li>
+              <li class="animate__animated animate__fadeInLeft">
+                Rock Nacional
+              </li>
+              <li class="animate__animated animate__fadeInLeft">Pop Hits</li>
+              <li class="animate__animated animate__fadeInLeft">Sertanejo</li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col main-content">
+          <header class="mb-4">
+            <div
+              class="user-nav d-flex justify-content-between align-items-center"
+            >
+              <div class="nav-buttons">
+                <button class="nav-btn btn">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn btn">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="user-profile d-flex align-items-center">
+                <span class="ms-2">Luan Moraes</span>
+                <div class="dropdown ms-2">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="fas fa-user-circle"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section class="featured">
+            <h1 class="display-6 mb-4 animate__animated animate__fadeIn">
+              Bem-vindo de volta!
+            </h1>
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-4"
+            >
+              <!-- Mix Diário -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Tocar playlist Mix Diário"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Mix Diário"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Mix Diário</h5>
+                    <p class="card-text">Suas músicas favoritas</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jorge & Mateus -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/jorge-e-mateus/images/jorge-e-mateus.jpg"
+                    alt="Jorge & Mateus"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Jorge & Mateus</h5>
+                    <p class="card-text">Hits sertanejos</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Henrique & Juliano -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/henrique-e-juliano/images/henrique-e-juliano.jpg"
+                    alt="Henrique & Juliano"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Henrique & Juliano</h5>
+                    <p class="card-text">Sucessos da dupla</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zé Neto & Cristiano -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/ze-neto-e-cristiano/images/ze-neto-e-cristiano.jpg"
+                    alt="Zé Neto & Cristiano"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Zé Neto & Cristiano</h5>
+                    <p class="card-text">Top hits</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gusttavo Lima -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/gusttavo-lima/images/gusttavo-lima.jpg"
+                    alt="Gusttavo Lima"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gusttavo Lima</h5>
+                    <p class="card-text">O embaixador</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Maiara & Maraisa -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/maiara-e-maraisa/images/maiara-e-maraisa.jpg"
+                    alt="Maiara & Maraisa"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Maiara & Maraisa</h5>
+                    <p class="card-text">As patroas</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Luan Santana -->
+              <div class="col">
+                <div
+                  class="playlist-card card h-100 animate__animated animate__fadeIn"
+                >
+                  <img
+                    src="https://www.vagalume.com.br/luan-santana/images/luan-santana.jpg"
+                    alt="Luan Santana"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Luan Santana</h5>
+                    <p class="card-text">Hits do Luan</p>
+                    <div class="play-hover">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Player -->
+      <footer class="player fixed-bottom">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-3">
+              <div class="now-playing d-flex align-items-center">
+                <img
+                  src="https://www.vagalume.com.br/jorge-e-mateus/images/jorge-e-mateus.jpg"
+                  alt="Current Track"
+                  class="me-3"
+                />
+                <div class="track-info">
+                  <h6 class="mb-0">Propaganda</h6>
+                  <small class="text-muted">Jorge & Mateus</small>
+                </div>
+                <i class="far fa-heart ms-auto"></i>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="player-controls text-center">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <i class="fas fa-random"></i>
+                  <i class="fas fa-step-backward"></i>
+                  <i
+                    class="fas fa-play-circle fs-1"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Tocar/Pausar"
+                  ></i>
+                  <i class="fas fa-step-forward"></i>
+                  <i class="fas fa-redo"></i>
+                </div>
+                <div class="progress-bar mt-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="time current">0:00</span>
+                    <div class="progress flex-grow-1" style="height: 4px">
+                      <div class="progress-filled"></div>
+                    </div>
+                    <span class="time total">0:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div
+                class="volume-controls d-flex align-items-center justify-content-end gap-2"
+              >
+                <i class="fas fa-volume-up"></i>
+                <div class="volume-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="player.js"></script>
+  </body>
+</html>
